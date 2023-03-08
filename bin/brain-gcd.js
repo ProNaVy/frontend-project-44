@@ -1,8 +1,6 @@
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name?');
-console.log(`Hello, ${userName}!`);
 
 const brainGcd = () => {
   console.log('brain-gcd');
@@ -17,15 +15,15 @@ const brainGcd = () => {
 
       const answer = readlineSync.question(`Question: ${randomGcd} \nYour answer:`);
 
-      const trueAnsver = (a, b) => {
-        while (a !== b) {
-          if (a > b) {
-            a -= b;
+      const trueAnsver = (num1, num2) => {
+        while (num1 !== num2) {
+          if (num1 > num2) {
+            num1 -= num2;
           } else {
-            b -= a;
+            num2 -= num1;
           }
         }
-        return a;
+        return num1;
       };
 
       if (Number(trueAnsver(randomNamber1, randomNamber2)) === Number(answer)) {
