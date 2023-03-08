@@ -40,5 +40,5 @@ const brainGcd = () => {
   game();
 };
 
-brainGcd();
 export default brainGcd;
+
