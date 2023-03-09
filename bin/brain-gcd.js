@@ -16,14 +16,16 @@ const brainGcd = () => {
       const answer = readlineSync.question(`Question: ${randomGcd} \nYour answer:`);
 
       const trueAnsver = (num1, num2) => {
-        while (num1 !== num2) {
-          if (num1 > num2) {
-            num1 -= num2;
+        let result1 = num1;
+        let result2 = num2;
+        while (result1 !== result2) {
+          if (result1 > result2) {
+            result1 -= result2;
           } else {
-            num2 -= num1;
+            result2 -= result1;
           }
         }
-        return num1;
+        return result1;
       };
 
       if (Number(trueAnsver(randomNamber1, randomNamber2)) === Number(answer)) {
@@ -39,4 +41,3 @@ const brainGcd = () => {
 };
 
 export default brainGcd;
-
