@@ -47,7 +47,7 @@ if (i === 3) { console.log(`Congratulations, ${userName}!`); }
 game();
 };
 
-
+brainProgression();
 
 /* const game = () => {
     let i;
