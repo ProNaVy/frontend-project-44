@@ -1,9 +1,11 @@
 import readlineSync from 'readline-sync';
 
+console.log('Welcome to the Brain Games!');
 const userName = readlineSync.question('May I have your name?');
+console.log(`Hello, ${userName}!`);
 
-const brainGcd = () => {
-  console.log('brain-gcd');
+export const brainGcd = () => {
+  console.log('Brain gcd');
 
   console.log('Find the greatest common divisor of given numbers.');
   const game = () => {
@@ -39,5 +41,3 @@ const brainGcd = () => {
   };
   game();
 };
-
-export default brainGcd;

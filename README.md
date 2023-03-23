@@ -10,3 +10,5 @@
  https://asciinema.org/a/81y8QV06RB1qWrokZRf07S37a
 аскинема brain-progreccion
  https://asciinema.org/a/WRkGiconAiGq90dMD2rESXY0L
+аскинема brain-prime
+ https://asciinema.org/a/j6RUM17Rm8qSgcthFcZIc6Q39
