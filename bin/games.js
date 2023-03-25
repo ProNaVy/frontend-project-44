@@ -6,7 +6,7 @@ export const game = (round, name) => {
     const [question, trueAnsver] = round();
     const answer = readlineSync.question(`Question: ${question} \nYour answer:`);
 
-    if (Number(trueAnsver) !== Number(answer)) {
+    if (trueAnsver != answer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver}'. Let's try again, ${name}!`);
       return;
     }
