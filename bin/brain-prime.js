@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 
-
 export const brainPrime = (name) => {
   console.log('Brain prime');
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

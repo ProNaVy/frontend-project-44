@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 
-
 export const brainCalc = (name) => {
   console.log('Brain calc');
 

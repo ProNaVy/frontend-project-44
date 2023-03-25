@@ -1,7 +1,5 @@
 import readlineSync from 'readline-sync';
 
-
-
 export const brainProgression = (name) => {
   console.log('Brain progression');
   console.log('What number is missing in the progression?');
