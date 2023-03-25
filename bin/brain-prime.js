@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name?');
-console.log(`Hello, ${userName}!`);
 
-export const brainPrime = () => {
+export const brainPrime = (name) => {
   console.log('Brain prime');
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   const game = () => {
@@ -38,11 +35,11 @@ export const brainPrime = () => {
       if (trueAnsver === answer) {
         console.log('Correct!');
       } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver}'. Let's try again, ${userName}!`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver}'. Let's try again, ${name}!`);
         return;
       }
     }
-    if (i === 3) { console.log(`Congratulations, ${userName}!`); }
+    if (i === 3) { console.log(`Congratulations, ${name}!`); }
   };
   game();
 };

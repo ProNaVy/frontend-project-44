@@ -1,10 +1,6 @@
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name?');
-console.log(`Hello, ${userName}!`);
-
-export const brainGcd = () => {
+/*export const brainGcd = (name) => {
   console.log('Brain gcd');
 
   console.log('Find the greatest common divisor of given numbers.');
@@ -33,11 +29,15 @@ export const brainGcd = () => {
       if (Number(trueAnsver(randomNamber1, randomNamber2)) === Number(answer)) {
         console.log('Correct!');
       } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver(randomNamber1, randomNamber2)}'. Let's try again, ${userName}!`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver(randomNamber1, randomNamber2)}'. Let's try again, ${name}!`);
         return;
       }
     }
-    if (i === 3) { console.log(`Congratulations, ${userName}!`); }
+    if (i === 3) { console.log(`Congratulations, ${name}!`); }
   };
   game();
-};
+};*/
+
+import {brainGcd} from '/home/elena/frontend-project-44/src/games/brainGcd.js'
+
+export default brainGcd

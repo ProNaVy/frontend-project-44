@@ -1,10 +1,7 @@
 import readlineSync from 'readline-sync';
 
-console.log('Welcome to the Brain Games!');
-const userName = readlineSync.question('May I have your name?');
-console.log(`Hello, ${userName}!`);
 
-export const brainCalc = () => {
+export const brainCalc = (name) => {
   console.log('Brain calc');
 
   console.log('What is the result of the expression?');
@@ -34,12 +31,12 @@ export const brainCalc = () => {
       if (trueAnsver() === Number(answer)) {
         console.log('Correct!');
       } else {
-        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver()}'. Let's try again, ${userName}!`);
+        console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnsver()}'. Let's try again, ${name}!`);
         return;
       }
     }
     if (i === 3) {
-      console.log(`Congratulations, ${userName}!`);
+      console.log(`Congratulations, ${name}!`);
     }
   };
   game();
