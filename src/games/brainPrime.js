@@ -1,6 +1,6 @@
-import { game } from '../../bin/games.js';
+import game from '../../bin/games.js';
 
-export const brainPrime = (name) => {
+const brainPrime = (name) => {
   console.log('Brain prime');
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
@@ -26,3 +26,4 @@ export const brainPrime = (name) => {
 
   game(round, name);
 };
+export default brainPrime;

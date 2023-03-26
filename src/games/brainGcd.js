@@ -1,6 +1,6 @@
-import { game } from '../../bin/games.js';
+import game from '../../bin/games.js';
 
-export const brainGcd = (name) => {
+const brainGcd = (name) => {
   console.log('Brain gcd');
   console.log('Find the greatest common divisor of given numbers.');
   const round = () => {
@@ -26,3 +26,4 @@ export const brainGcd = (name) => {
 
   game(round, name);
 };
+export default brainGcd;

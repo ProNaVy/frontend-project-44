@@ -1,6 +1,6 @@
-import { game } from '../../bin/games.js';
+import game from '../../bin/games.js';
 
-export const brainCalc = (name) => {
+const brainCalc = (name) => {
   console.log('Brain calc');
   console.log('What is the result of the expression?');
 
@@ -29,3 +29,5 @@ export const brainCalc = (name) => {
 
   game(round, name);
 };
+
+export default brainCalc;

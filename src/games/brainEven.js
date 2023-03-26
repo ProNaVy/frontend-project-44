@@ -1,6 +1,6 @@
-import { game } from '../../bin/games.js';
+import game from '../../bin/games.js';
 
-export const brainEven = (name) => {
+const brainEven = (name) => {
   console.log('Brain even');
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
@@ -14,3 +14,5 @@ export const brainEven = (name) => {
 
   game(round, name);
 };
+
+export default brainEven;
