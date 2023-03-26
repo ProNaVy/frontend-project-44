@@ -1,3 +1,8 @@
-import { brainEven } from '../src/games/brainEven.js';
+#!/usr/bin/env node
 
-export default brainEven;
+import { brainEven } from '../src/games/brainEven.js';
+import greetings from '../src/cli.js';
+
+
+const name = greetings();
+brainEven(name);

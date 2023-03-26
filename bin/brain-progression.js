@@ -1,3 +1,8 @@
-import { brainProgression } from '../src/games/brainProgression.js';
+#!/usr/bin/env node
 
-export default brainProgression;
+import { brainProgression } from '../src/games/brainProgression.js';
+import greetings from '../src/cli.js';
+
+
+const name = greetings();
+brainProgression(name);
