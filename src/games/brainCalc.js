@@ -9,7 +9,7 @@ export const brainCalc = (name) => {
     const randomArr = Math.floor(Math.random(arr) * arr.length);
     const randomNamber1 = Math.floor(Math.random() * 100);
     const randomNamber2 = Math.floor(Math.random() * 100);
-    const question = (`${randomNamber1}${arr[randomArr]}${randomNamber2}`);
+    const question = (`${randomNamber1} ${arr[randomArr]} ${randomNamber2}`);
 
     const trueAnsver1 = () => {
       let res;
