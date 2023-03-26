@@ -8,7 +8,7 @@
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
     "brain-progression": "bin/brain-progression.js",
-    "brain prime": "brain-prime.js",
+    "brain-prime": "brain-prime.js",
     "games": "bin/games.js"
    },
   "description": "[![Actions Status](https://github.com/ProNaVy/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/ProNaVy/frontend-project-44/actions)",
