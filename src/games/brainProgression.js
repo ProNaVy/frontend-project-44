@@ -19,7 +19,7 @@ export const brainProgression = (name) => {
     const ind = Math.floor(Math.random() * 10);
     arr.splice(ind, 1, '..');
 
-    const question = arr.join(" ");
+    const question = arr.join(' ');
     // правильный ответ
 
     const trueAnsver = (ind === 0 ? firstElement + progres : arr[ind - 1] + progres);
